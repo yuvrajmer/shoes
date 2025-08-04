@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .nav-link:hover {
+            color: rgb(231, 46, 46);
+        }
+
+        .video-section {
+            position: relative;
+            height: 78vh;
+            overflow: hidden;
+        }
+
+        .video-section video {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 0;
+        }
+
+        .sec1-d1 {
+            position: relative;
+            z-index: 1;
+            width: 84vw;
+            height: 100%;
+        }
+
+        .sec1-d1>h1 {
+            margin-top: 28vh;
+            margin-left: 13vw;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 55px;
+            color: #000000;
+        }
+
+        .sec1-d1>p {
+            margin-top: 3vh;
+            margin-left: 13vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #000000;
+        }
+
+        .sec1-d1>button {
+            margin-top: 1vh;
+            background-color: rgb(206, 38, 38);
+            height: 45px;
+            width: 160px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+
+
+        .sec2 {
+            margin-top: 10vh;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        .box1 {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm4e7g172vEfolmf3d3wQEYmmam65etxwujQ&s");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 40vh;
+            width: 25vw;
+        }
+
+        .box2 {
+            background-image: url("https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw3a49bfc9/images/page-designer/2024/July/16757_Comp_E_Image1.jpg?sw=991&sfrm=jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 40vh;
+            width: 24vw;
+        }
+
+        .box3 {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs-uIid6ynMNplgXW-dPFbljAdQq9io1QZWg&s");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 40vh;
+            width: 24vw;
+        }
+
+        .box4 {
+            background-image: url("https://www.newbalance.com.my/dw/image/v2/AASX_PRD/on/demandware.static/-/Library-Sites-APAC/default/dw4ed684d7/2024_images/PDP_Banner/MR530SGB_117.jpg?sw=991&sfrm=jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 40vh;
+            width: 24vw;
+        }
+
+        .box-hh {
+            height: 40vh;
+            width: 25vw;
+            padding-top: 16vh;
+            display: flex;
+            justify-content: center;
+            color: white;
+            background-color: rgb(0, 0, 0, 0.5);
+        }
+
+        .box-h {
+            height: 40vh;
+            width: 24vw;
+            padding-top: 16vh;
+            display: flex;
+            justify-content: center;
+            color: white;
+            background-color: rgb(0, 0, 0, 0.5);
+        }
+
+
+        .toggle-group {
+            margin-left: 26vw;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            padding: 5px;
+            display: inline-flex;
+        }
+
+        .toggle-button {
+            border: none;
+            background-color: transparent;
+            color: black;
+            padding: 10px 30px;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .toggle-button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .toggle-button:focus,
+        .toggle-button.active {
+            background-color: white;
+            font-weight: bold;
+            outline: none;
+            box-shadow: 0 0 0 1px #ccc;
+        }
+
+
+        .s4-div1 {
+            margin-top: 28vh;
+            margin-left: 11vw;
+        }
+
+        .s4-box {
+            margin-top: 2vh;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            height: 85vh;
+            width: 25vw;
+            display: block;
+        }
+
+        .sec5-d1 {
+            background-image: url("https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw0a16e70f/images/page-designer/2025/BTS/Comp_A/NB-3811_Comp_A_RunFast_Mobile.jpg?sw=991&sfrm=jpg");
+            height: 84vh;
+            width: 51vw;
+            background-repeat: no-repeat;
+        }
+
+        .sec5-d2 {
+            height: 84vh;
+            width: 34vw;
+            background-color: rgb(228, 213, 202);
+        }
+
+        .sec5-d2>h1 {
+            margin-top: 28vh;
+            margin-left: 13vw;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 55px;
+            color: #000000;
+        }
+
+        .sec5-d2>p {
+            margin-top: 3vh;
+            margin-left: 13vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #000000;
+        }
+
+        .sec5-d2>button {
+            margin-top: 1vh;
+            background-color: rgb(206, 38, 38);
+            height: 45px;
+            width: 160px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="fixed-top w-100 bg-transparent" style="z-index: 1050;">
+        <nav class="navbar navbar-expand-lg"
+            style="background-color: rgba(255, 255, 255, 0.85); backdrop-filter: blur(6px);">
+            <div class="container-fluid ms-5">
+                <img src="https://logoeps.com/wp-content/uploads/2012/05/new-balance-logo-vector-01.png" alt="Bootstrap"
+                    style="height: 10vh;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5 fs-5 gap-5 nav-underline">
+                        <li class="nav-item ms-5">
+                            <a class="nav-link" aria-current="page" href="new.html">New</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="men.html">Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="women.html">Women</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kids.html">Kids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sale.html">Sale</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex gap-4" role="search">
+                        <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search" />
+                        <a class="fs-2"><i class="fa-solid fa-cart-shopping fa-fade" style="color: #000000;"></i></a>
+                        <a class="fs-2"><i class="fa-solid fa-user" style="color: #000000;"></i></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <ul class="nav nav-underline justify-content-center gap-5 fs-6"
+            style="background-color: rgba(255, 255, 255, 0.85); backdrop-filter: blur(6px);">
+            <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Shoes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Clothing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Accessories</a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- SECTION-1 -->
+
+
+    <section class="video-section d-flex justify-content-center align-items-start" style="margin-top: 17vh;">
+        <video autoplay muted loop playsinline>
+            <source src="https://nb.scene7.com/is/content/NB/NB-5882_Syd_9060_Rebel_16x9_15s_sfra" type="video/mp4">
+        </video>
+
+        <div class="sec1-d1">
+            <h1>The 574</h1>
+            <p>Worn by anyone.</p>
+            <button type="button" class="btn btn-danger" style="margin-left: 13vw;">Shop Adult</button>
+            <button type="button" class="btn btn-danger ms-2">Shop Kids</button>
+        </div>
+    </section>
+
+
+    <!-- SECTION-2 -->
+
+    <section class="sec2 d-flex justify-content-center gap-2">
+        <div class="box1">
+            <h2 class="box-hh">Shoes</h2>
+        </div>
+        <div class="box2">
+            <h2 class="box-h">Clothing</h2>
+        </div>
+        <div class="box3">
+            <h2 class="box-h">Accessories</h2>
+        </div>
+        <div class="box4">
+            <h2 class="box-h">New arrivals</h2>
+        </div>
+    </section>
+
+    <!-- SECTION-3 -->
+
+    <section class="mt-5">
+        <div class="d-flex justify-content-center ms-4" style="margin-top: 15vh;">
+            <h4 class="">What's Trending</h4>
+        </div>
+        <div class="container mt-4">
+            <div class="toggle-group">
+                <button class="toggle-button">Women</button>
+                <button class="toggle-button">Men</button>
+                <button class="toggle-button">Kids</button>
+            </div>
+            <div class="d-flex justify-content-center gap-3">
+                <div class="mt-5"><img src="./gallery/img2 (3).png" alt="" class="img-fluid">
+                    <p style="color: brown;"><b>New</b></p>
+                    <p><b>FuelCell Rebel v5</b></p>
+                    <p>Women's</p>
+                    <p><b>$139.99</b></p>
+                </div>
+                <div class="mt-5"><img src="./gallery/img2 (5).png" alt="" class="img-fluid">
+                    <p><b>Coastal Fleece Crew</b></p>
+                    <p>Women's</p>
+                    <p><b>$59.99 - $79.99</b></p>
+                </div>
+                <div class="mt-5"><img src="./gallery/img2 (4).png" alt="" class="img-fluid">
+                    <p><b>471</b></p>
+                    <p>Unisex</p>
+                    <p><b>$74.99 - $109.99</b></p>
+                </div>
+                <div class="mt-5"><img src="./gallery/img2 (1).png" alt="" class="img-fluid">
+                    <p style="color: brown;"><b>Best Seller</b></p>
+                    <p><b>Coastal Fleece Pant</b></p>
+                    <p>Women's</p>
+                    <p><b>$79.99</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION-4 -->
+
+    <section>
+        <div class="s4-div1">
+            <h3>Shop by Category</h3>
+        </div>
+        <div class=" d-flex justify-content-center gap-4">
+            <div class="s4-box"><img src="./gallery/img1 (1).png" alt="" height="96%" width="100%"><a
+                    class="d-flex justify-content-center mt-3" href="" style="color: #000000;"><b>Graphic shop</b></a>
+            </div>
+            <div class="s4-box"><img src="./gallery/img1 (3).png" alt="" height="96%" width="100%"><a
+                    class="d-flex justify-content-center mt-3" href="" style="color: #000000;"><b>Matching sets</b></a>
+            </div>
+            <div class="s4-box"><img src="./gallery/img1 (2).png" alt="" height="96%" width="100%"><a
+                    class="d-flex justify-content-center mt-3" href="" style="color: #000000;"><b>Kids</b></a></div>
+        </div>
+    </section>
+
+    <!-- section-5 -->
+
+    <section class="d-flex justify-content-center mt-5">
+        <div class="sec5-d2 mt-5">
+            <h1>We're back.</h1>
+            <p>Modern favorites for the new school year.</p>
+            <button type="button" class="btn btn-danger" style="margin-left: 13vw;">Shop Kids</button>
+        </div>
+        <div class="sec5-d1 mt-5">
+        </div>
+    </section>
+
+    <!-- SECTION-6 -->
+
+    <section class="mt-5">
+        <div class="" style="margin-top: 12vh;">
+            <div class="ms-4 mt-5">
+                <h3>Recommended for you</h3>
+            </div>
+            <div class="d-flex flex-wrap flex-lg-nowrap gap-1 mt-4 overflow-auto">
+                <div style="flex: 2 2 20%;">
+                    <img src="https://nb.scene7.com/is/image/NB/u530esa_nb_02_i?$pdpflexf2$&wid=464&hei=464"
+                        class="img-fluid w-100 rounded" alt="">
+                    <p>Unisex</p>
+                    <p><b>$99.99</b></p>
+                </div>
+                <div style="flex: 2 2 20%;">
+                    <img src="https://nb.scene7.com/is/image/NB/wfcprcs5_nb_02_i?$pdpflexf2$&wid=464&hei=464"
+                        class="img-fluid w-100 rounded" alt="">
+                    <p>Women's</p>
+                    <p><b>$119.99</b></p>
+                </div>
+                <div style="flex: 2 2 20%;">
+                    <img src="https://nb.scene7.com/is/image/NB/ws327nkd_nb_02_i?$pdpflexf2$&wid=464&hei=464"
+                        class="img-fluid w-100 rounded" alt="">
+                    <p>Women's</p>
+                    <p><b>$99.99</b></p>
+                </div>
+                <div style="flex: 2 2 20%;">
+                    <img src="https://nb.scene7.com/is/image/NB/waristm4_nb_02_i?$pdpflexf2$&wid=464&hei=464"
+                        class="img-fluid w-100 rounded" alt="">
+                    <p>Women's</p>
+                    <p><b>$74.99</b></p>
+                </div>
+                <div style="flex: 2 2 20%;">
+                    <img src="https://nb.scene7.com/is/image/NB/u740sf2_nb_02_i?$pdpflexf2$&wid=464&hei=464"
+                        class="img-fluid w-100 rounded" alt="">
+                    <p>Unisex</p>
+                    <p><b>$94.99 - $109.99</b></p>
+                </div>
+                <div style="flex: 2 2 20%;">
+                    <img src="https://nb.scene7.com/is/image/NB/w680cb8_nb_02_i?$pdpflexf2$&wid=464&hei=464"
+                        class="img-fluid w-100 rounded" alt="">
+                    <p>Women's</p>
+                    <p><b>$79.99</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION-7 -->
+
+    <div class="d-flex justify-content-center mt-5">
+        <p class="mt-5 " style="font-family: Verdana, Geneva, Tahoma, sans-serif">Discover the perfect blend of timeless
+            style, quality, and performance. Shop New Balance shoes, sneakers, and athletic wear.</p>
+    </div>
+
+    <!-- SECTION-8 -->
+
+    <nav class="navbar mt-5" style="background-color: #050505; color: white; ">
+        <form class="container-fluid justify-content-center gap-3 mt-2">
+            <p class="mt-2">Be the first to know about new arrivals</p>
+            <button type="button" class="btn mb-2"
+                style="background-color: rgb(191, 21, 21); color: #ccc; height: 5vh; width: 160px;"><b>Sing
+                    Up</b></button>
+        </form>
+    </nav>
+
+    <footer class="container-fluid py-5 px-4 px-md-5 bg-light">
+        <div class="row">
+            <div class="col-12 col-md-8 d-flex flex-column flex-md-row ">
+                <ul class="list-unstyled me-md-5 mb-4 mb-md-0">
+                    <li><strong>Help</strong></li>
+                    <li class="mt-3"><a href="#" class="text-decoration-none text-dark">Contact us</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Start a return</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Track your order</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Become a member</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Size guide</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">FAQ</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><strong>About Us</strong></li>
+                    <li class="mt-3"><a href="#" class="text-decoration-none text-dark">Our purpose</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Responsible leadership</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">New Balance Foundation</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Careers</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">The TRACK at New Balance</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Press box</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Medical Plan information</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-4 mt-4 mt-md-0">
+                <h4>Fearlessly Independent</h4>
+                <img src="https://logoeps.com/wp-content/uploads/2012/05/new-balance-logo-vector-01.png"
+                    alt="New Balance Logo" class="img-fluid my-2" style="max-width: 60px;">
+                <p class="small">Independent since 1906, we empower people <br> through sport and craftsmanship to
+                    create <br> positive change in communities around the <br> world.</p>
+                <div class="fs-5 mt-2">
+                    <a href="#" class="text-dark me-2"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-dark me-2"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-dark me-2"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="text-dark"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

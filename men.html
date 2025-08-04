@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .s2-d1 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 25px;
+        }
+
+        .box {
+            height: 40vh;
+            width: 21vw;
+        }
+
+        .s3-d1 {
+            margin-top: 27vh;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 25px;
+        }
+
+
+
+
+        .sec2 {
+            margin-top: 2vh;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .box1 {
+            background-image: url("https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwd70231c2/images/page-designer/2025/Wayfinding/NB-4905_Multi_Tile_Desktop_3up_Men_Shoes2.jpg?sw=1616&sfrm=jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 30vh;
+            width: 22vw;
+        }
+
+        .box2 {
+            background-image: url("https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw511734ef/images/page-designer/2025/Wayfinding/NB-4905_Multi_Tile_Desktop_3up_Men_Clothing1.jpg?sw=1616&sfrm=jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 30vh;
+            width: 21.4vw;
+        }
+
+        .box3 {
+            background-image: url("https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw088669ba/images/page-designer/2025/Wayfinding/NB-4905_Multi_Tile_Desktop_3up_Men_Accessories.jpg?sw=1616&sfrm=jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 30vh;
+            width: 22vw;
+        }
+
+        .box-hh {
+            height: 30vh;
+            width: 20vw;
+            padding-top: 11vh;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+
+        .box-h {
+            height: 30vh;
+            width: 20vw;
+            padding-top: 11vh;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header class="fixed-top w-100 bg-transparent" style="z-index: 1050;">
+        <nav class="navbar navbar-expand-lg"
+            style="background-color: rgba(255, 255, 255, 0.85); backdrop-filter: blur(6px);">
+            <div class="container-fluid ms-5">
+                <img src="https://logoeps.com/wp-content/uploads/2012/05/new-balance-logo-vector-01.png" alt="Bootstrap"
+                    style="height: 10vh;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5 fs-5 gap-5 nav-underline">
+                        <li class="nav-item ms-5">
+                            <a class="nav-link" href="index.html" style="color: rgb(195, 39, 39);">Home</a>
+                        </li>
+                        <li class="nav-item ms-5">
+                            <a class="nav-link" aria-current="page" href="new.html">New</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="men.html">Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="women.html">Women</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kids.html">Kids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sale.html">Sale</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex gap-4" role="search">
+                        <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search" />
+                        <a class="fs-2"><i class="fa-solid fa-cart-shopping fa-fade" style="color: #000000;"></i></a>
+                        <a class="fs-2"><i class="fa-solid fa-user" style="color: #000000;"></i></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <ul class="nav nav-underline justify-content-center gap-5 fs-6"
+            style="background-color: rgba(255, 255, 255, 0.85); backdrop-filter: blur(6px);">
+            <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Shoes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Clothing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Accessories</a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- SECTION-1 -->
+
+    <section class="sec-1 container" style="margin-top: 17vh;">
+        <h6>Men</h6>
+        <h4 class="mt-2"><b>Men</b></h4>
+
+        <div class="sec2 d-flex flex-wrap gap-2 mt-3">
+            <div class="box1 p-3 bg-light text-center flex-fill">
+                <h2 class="box-hh">Shoes</h2>
+            </div>
+            <div class="box2 p-3 bg-light text-center flex-fill">
+                <h2 class="box-h">Clothing</h2>
+            </div>
+            <div class="box3 p-3 bg-light text-center flex-fill">
+                <h2 class="box-hh">Accessories</h2>
+            </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+            <button type="button" class="btn btn-outline-secondary mt-2">
+                <i class="fa-solid fa-sliders"></i>&nbsp;&nbsp;Show Filters
+            </button>
+
+            <div class="dropdown mt-2">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Sort
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                    <li><a class="dropdown-item" href="#">Price (Low-High)</a></li>
+                    <li><a class="dropdown-item" href="#">Price (High-Low)</a></li>
+                    <li><a class="dropdown-item" href="#">Most popular</a></li>
+                    <li><a class="dropdown-item" href="#">Featured</a></li>
+                    <li><a class="dropdown-item" href="#">Availability</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION-2 -->
+
+    <section class="d-flex justify-content-center mt-5">
+        <div class="s2-d1">
+            <div class="box"><img
+                    src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwac60242e/images/page-designer/2025/July/NB4676_Comp_A2_Mobile.jpg"
+                    alt="" height="155%" width="100%" style="object-fit: cover;">
+            </div>
+            <div class="box">
+                <img src="https://nb.scene7.com/is/image/NB/m108014f_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <p><b>Fresh Foam X 1080v14</b> <br> Men's Running <br>$164.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+
+            <div class="box">
+                <img src="https://nb.scene7.com/is/image/NB/ml574evw_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <h6 style="color: rgb(164, 105, 27);"><b>Best seller</b></h6>
+                <p><b>574 Core</b> <br>Men's Lifestyle <br>$99.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION-3 -->
+
+    <section class="d-flex justify-content-center">
+        <div class="s3-d1">
+            <div class="box"><img
+                    src="https://nb.scene7.com/is/image/NB/m880g15_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <p><b>Fresh Foam X 880v15</b> <br>Men's Running<br>$139.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+            <div class="box">
+                <img src="https://nb.scene7.com/is/image/NB/m990gl6_nb_05_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880"
+                    alt="" height="100%" width="100%">
+                <h6 style="color: rgb(164, 105, 27);"><b>Best seller</b></h6>
+                <p><b>Made in USA 990v6</b> <br> Men's Lifestyle <br>$199.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+
+            <div class="box">
+                <img src="https://nb.scene7.com/is/image/NB/u9060bpm_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <h6 style="color: rgb(164, 105, 27);"><b>Back in stock</b></h6>
+                <p><b>9060</b> <br> Unisex Lifestyle<br>$124.99 - $149.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="d-flex justify-content-center">
+        <div class="s3-d1" style="margin-top: 200px;">
+            <div class="box"><img
+                    src="https://nb.scene7.com/is/image/NB/mt53654ahh_nb_31_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
+                <p><b>Boston Character T-Shirt </b> <br> Men's Shirts <br>$49.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+            <div class="box">
+                <img src="https://nb.scene7.com/is/image/NB/u991pr2_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
+                <p><b>Made in UK 991v2 Grape Sorbet </b> <br> Unisex Lifestyle <br>$249.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+
+            <div class="box">
+                <img src="https://nb.scene7.com/is/image/NB/mt53818wt_nb_50_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
+                <p><b>Shohei Memories Graphic T-Shirt</b> <br>Men's Shirts <br>$39.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="d-flex justify-content-center">
+        <div class="s3-d1" style="margin-top: 200px;">
+            <div class="box"><img
+                    src="https://nb.scene7.com/is/image/NB/mch996s6_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
+                <p><b>FuelCell 996v6</b> <br> Men's Tennis <br>$134.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+            <div class="box">
+                <img src="https://nb.scene7.com/is/image/NB/nm417lwg_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
+                <p><b>NB Numeric Franky Villani 417 Low</b> <br> Unisex Skateboarding <br>$79.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+
+            <div class="box">
+                <img src="https://nb.scene7.com/is/image/NB/tshoac1_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
+                <p><b>FuelCell Ohtani 1 Trainer</b> <br>Men's Baseball <br>$119.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="d-flex justify-content-center">
+        <div class="s3-d1" style="margin-top: 200px;">
+            <div class="box"><img
+                    src="https://nb.scene7.com/is/image/NB/lah01453gas_nb_03_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
+                <p><b>'47 Hitch with Rope Hat</b> <br>Unisex Hats<br>$37.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+            <div class="box">
+                <img src="https://nb.scene7.com/is/image/NB/ms53610mhb_nb_71_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
+                <p><b>In Game Printed 7" Mesh Short</b> <br>Men's Shorts<br>$54.99 <br> <s>$29.99</s></p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+
+            <div class="box">
+                <img src="https://nb.scene7.com/is/image/NB/bb550utw_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <h6 style="color: rgb(164, 105, 27);"><b>Coming soon</b></h6>
+                <p><b>550</b> <br>Unisex Lifestyle <br>$109.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="d-flex justify-content-center">
+        <div class="s3-d1" style="margin-top: 210px;">
+            <div class="box"><img
+                    src="https://nb.scene7.com/is/image/NB/u574spr_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
+                <p><b>574</b> <br>Unisex Lifestyle<br>$77.99 - $99.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+            <div class="box">
+                <img src="https://nb.scene7.com/is/image/NB/mt53928bum_nb_72_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <p><b>Woven Label T-Shirt</b> <br>Men's Shirts<br>$24.99 <br> <s>$29.99</s></p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+
+            <div class="box">
+                <img src="https://nb.scene7.com/is/image/NB/u990mm6_nb_03_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880"
+                    alt="" height="100%" width="100%">
+                <p><b>Made in USA 990v6</b> <br>Unisex Lifestyle<br>$199.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="d-flex justify-content-center">
+        <div class="s3-d1" style="margin-top: 210px;">
+            <div class="box"><img
+                    src="https://nb.scene7.com/is/image/NB/lab23199vti_nb_03_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                    alt="" height="100%" width="100%">
+                <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
+                <p><b>Athletics Backpack</b> <br>Unisex Bags<br>$79.99</p>
+                <button type="button" class="btn btn-danger">Add to Cart</button>
+                <button type="button" class="btn btn-danger ms-2">Buy Now</button>
+            </div>
+            <div class="box">
+            </div>
+
+            <div class="box">
+
+            </div>
+        </div>
+    </section>
+
+    <nav class="navbar" style="background-color: #050505; color: white; margin-top: 220px;">
+        <form class="container-fluid justify-content-center gap-3 mt-2">
+            <p class="mt-2">Be the first to know about new arrivals</p>
+            <button type="button" class="btn mb-2"
+                style="background-color: rgb(191, 21, 21); color: #ccc; height: 5vh; width: 160px;"><b>Sing
+                    Up</b></button>
+        </form>
+    </nav>
+
+    <footer class="container-fluid py-5 px-4 px-md-5 bg-light">
+        <div class="row">
+            <div class="col-12 col-md-8 d-flex flex-column flex-md-row ">
+                <ul class="list-unstyled me-md-5 mb-4 mb-md-0">
+                    <li><strong>Help</strong></li>
+                    <li class="mt-3"><a href="#" class="text-decoration-none text-dark">Contact us</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Start a return</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Track your order</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Become a member</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Size guide</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">FAQ</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><strong>About Us</strong></li>
+                    <li class="mt-3"><a href="#" class="text-decoration-none text-dark">Our purpose</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Responsible leadership</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">New Balance Foundation</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Careers</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">The TRACK at New Balance</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Press box</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Medical Plan information</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-4 mt-4 mt-md-0">
+                <h4>Fearlessly Independent</h4>
+                <img src="https://logoeps.com/wp-content/uploads/2012/05/new-balance-logo-vector-01.png"
+                    alt="New Balance Logo" class="img-fluid my-2" style="max-width: 60px;">
+                <p class="small">Independent since 1906, we empower people <br> through sport and craftsmanship to
+                    create <br> positive change in communities around the <br> world.</p>
+                <div class="fs-5 mt-2">
+                    <a href="#" class="text-dark me-2"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-dark me-2"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-dark me-2"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="text-dark"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
