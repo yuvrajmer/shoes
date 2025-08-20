@@ -152,18 +152,84 @@
         }
 
 
+        /* section-3 css */
+
+        .s3-img {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .s3-img img {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: 0.3s ease;
+        }
+
+        .s3-img:hover img {
+            filter: blur(1px);
+            border-radius: 2px;
+            background: #e0e0e0;
+            box-shadow: 7px 7px 5px #cecece,
+                -7px -7px 2px #f2f2f2;
+        }
+
+        .btn-overlay {
+            position: absolute;
+            top: 34%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(206, 38, 38, 0.8);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+
+        .s3-img:hover .btn-overlay {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+
+
+
+        /* SECTION-4 */
+
+
         .s4-div1 {
-            margin-top: 28vh;
-            margin-left: 11vw;
+            margin-top: 23vh;
+            margin-left: 17vw;
         }
 
         .s4-box {
-            margin-top: 2vh;
-            display: grid;
-            grid-template-columns: auto auto auto;
-            height: 85vh;
-            width: 25vw;
-            display: block;
+            text-align: center;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .img-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .category-img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.4s ease;
+        }
+
+        .s4-box:hover .category-img {
+            transform: scale(1.1);
         }
 
         .sec5-d1 {
@@ -200,6 +266,27 @@
             height: 45px;
             width: 160px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+
+        /* SECTION-6 */
+
+
+        .rec-box {
+            text-align: center;
+        }
+
+        .img-wrapper {
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .product-img {
+            transition: transform 0.4s ease;
+        }
+
+        .rec-box:hover .product-img {
+            transform: scale(1.08);
         }
     </style>
 </head>
@@ -299,34 +386,48 @@
         </div>
         <div class="container mt-4">
             <div class="toggle-group">
-                <button class="toggle-button">Women</button>
+                <button class="toggle-button"><a href="women.html">Women</a></button>
                 <button class="toggle-button">Men</button>
                 <button class="toggle-button">Kids</button>
             </div>
             <div class="d-flex justify-content-center gap-3">
-                <div class="mt-5"><img src="./gallery/img2 (3).png" alt="" class="img-fluid">
+
+                <div class="mt-5 s3-img">
+                    <img src="./gallery/img2 (3).png" alt="" class="img-fluid">
+                    <a href=".html" class="btn-overlay">Shop Now</a>
                     <p style="color: brown;"><b>New</b></p>
                     <p><b>FuelCell Rebel v5</b></p>
                     <p>Women's</p>
                     <p><b>$139.99</b></p>
                 </div>
-                <div class="mt-5"><img src="./gallery/img2 (5).png" alt="" class="img-fluid">
+
+                <div class="mt-5 s3-img">
+                    <img src="./gallery/img2 (5).png" alt="" class="img-fluid">
+                    <a href="product1.html" class="btn-overlay">Shop Now</a>
                     <p><b>Coastal Fleece Crew</b></p>
                     <p>Women's</p>
                     <p><b>$59.99 - $79.99</b></p>
                 </div>
-                <div class="mt-5"><img src="./gallery/img2 (4).png" alt="" class="img-fluid">
+
+                <div class="mt-5 s3-img">
+                    <img src="./gallery/img2 (4).png" alt="" class="img-fluid">
+                    <a href="product1.html" class="btn-overlay">Shop Now</a>
                     <p><b>471</b></p>
                     <p>Unisex</p>
                     <p><b>$74.99 - $109.99</b></p>
                 </div>
-                <div class="mt-5"><img src="./gallery/img2 (1).png" alt="" class="img-fluid">
+
+                <div class="mt-5 s3-img">
+                    <img src="./gallery/img2 (1).png" alt="" class="img-fluid">
+                    <a href="product1.html" class="btn-overlay">Shop Now</a>
                     <p style="color: brown;"><b>Best Seller</b></p>
                     <p><b>Coastal Fleece Pant</b></p>
                     <p>Women's</p>
                     <p><b>$79.99</b></p>
                 </div>
+
             </div>
+
         </div>
     </section>
 
@@ -336,17 +437,33 @@
         <div class="s4-div1">
             <h3>Shop by Category</h3>
         </div>
-        <div class=" d-flex justify-content-center gap-4">
-            <div class="s4-box"><img src="./gallery/img1 (1).png" alt="" height="96%" width="100%"><a
-                    class="d-flex justify-content-center mt-3" href="" style="color: #000000;"><b>Graphic shop</b></a>
+
+        <div class="d-flex justify-content-center gap-4">
+
+            <div class="s4-box">
+                <div class="img-wrapper">
+                    <img src="./gallery/img1 (1).png" alt="Graphic Shop" class="category-img">
+                </div>
+                <a class="d-flex justify-content-center mt-3" href="#" style="color: #000000;"><b>Graphic shop</b></a>
             </div>
-            <div class="s4-box"><img src="./gallery/img1 (3).png" alt="" height="96%" width="100%"><a
-                    class="d-flex justify-content-center mt-3" href="" style="color: #000000;"><b>Matching sets</b></a>
+
+            <div class="s4-box">
+                <div class="img-wrapper">
+                    <img src="./gallery/img1 (3).png" alt="Matching Sets" class="category-img">
+                </div>
+                <a class="d-flex justify-content-center mt-3" href="#" style="color: #000000;"><b>Matching sets</b></a>
             </div>
-            <div class="s4-box"><img src="./gallery/img1 (2).png" alt="" height="96%" width="100%"><a
-                    class="d-flex justify-content-center mt-3" href="" style="color: #000000;"><b>Kids</b></a></div>
+
+            <div class="s4-box">
+                <div class="img-wrapper">
+                    <img src="./gallery/img1 (2).png" alt="Kids" class="category-img">
+                </div>
+                <a class="d-flex justify-content-center mt-3" href="#" style="color: #000000;"><b>Kids</b></a>
+            </div>
+
         </div>
     </section>
+
 
     <!-- section-5 -->
 
@@ -363,50 +480,71 @@
     <!-- SECTION-6 -->
 
     <section class="mt-5">
-        <div class="" style="margin-top: 12vh;">
+        <div style="margin-top: 12vh;">
             <div class="ms-4 mt-5">
                 <h3>Recommended for you</h3>
             </div>
-            <div class="d-flex flex-wrap flex-lg-nowrap gap-1 mt-4 overflow-auto">
-                <div style="flex: 2 2 20%;">
-                    <img src="https://nb.scene7.com/is/image/NB/u530esa_nb_02_i?$pdpflexf2$&wid=464&hei=464"
-                        class="img-fluid w-100 rounded" alt="">
+
+            <div class="d-flex flex-wrap flex-lg-nowrap gap-3 mt-4 overflow-auto">
+
+                <div class="rec-box" style="flex: 2 2 20%;">
+                    <div class="img-wrapper">
+                        <img src="https://nb.scene7.com/is/image/NB/u530esa_nb_02_i?$pdpflexf2$&wid=464&hei=464"
+                            class="img-fluid w-100 rounded product-img" alt="">
+                    </div>
                     <p>Unisex</p>
                     <p><b>$99.99</b></p>
                 </div>
-                <div style="flex: 2 2 20%;">
-                    <img src="https://nb.scene7.com/is/image/NB/wfcprcs5_nb_02_i?$pdpflexf2$&wid=464&hei=464"
-                        class="img-fluid w-100 rounded" alt="">
+
+                <div class="rec-box" style="flex: 2 2 20%;">
+                    <div class="img-wrapper">
+                        <img src="https://nb.scene7.com/is/image/NB/wfcprcs5_nb_02_i?$pdpflexf2$&wid=464&hei=464"
+                            class="img-fluid w-100 rounded product-img" alt="">
+                    </div>
                     <p>Women's</p>
                     <p><b>$119.99</b></p>
                 </div>
-                <div style="flex: 2 2 20%;">
-                    <img src="https://nb.scene7.com/is/image/NB/ws327nkd_nb_02_i?$pdpflexf2$&wid=464&hei=464"
-                        class="img-fluid w-100 rounded" alt="">
+
+                <div class="rec-box" style="flex: 2 2 20%;">
+                    <div class="img-wrapper">
+                        <img src="https://nb.scene7.com/is/image/NB/ws327nkd_nb_02_i?$pdpflexf2$&wid=464&hei=464"
+                            class="img-fluid w-100 rounded product-img" alt="">
+                    </div>
                     <p>Women's</p>
                     <p><b>$99.99</b></p>
                 </div>
-                <div style="flex: 2 2 20%;">
-                    <img src="https://nb.scene7.com/is/image/NB/waristm4_nb_02_i?$pdpflexf2$&wid=464&hei=464"
-                        class="img-fluid w-100 rounded" alt="">
+
+                <div class="rec-box" style="flex: 2 2 20%;">
+                    <div class="img-wrapper">
+                        <img src="https://nb.scene7.com/is/image/NB/waristm4_nb_02_i?$pdpflexf2$&wid=464&hei=464"
+                            class="img-fluid w-100 rounded product-img" alt="">
+                    </div>
                     <p>Women's</p>
                     <p><b>$74.99</b></p>
                 </div>
-                <div style="flex: 2 2 20%;">
-                    <img src="https://nb.scene7.com/is/image/NB/u740sf2_nb_02_i?$pdpflexf2$&wid=464&hei=464"
-                        class="img-fluid w-100 rounded" alt="">
+
+                <div class="rec-box" style="flex: 2 2 20%;">
+                    <div class="img-wrapper">
+                        <img src="https://nb.scene7.com/is/image/NB/u740sf2_nb_02_i?$pdpflexf2$&wid=464&hei=464"
+                            class="img-fluid w-100 rounded product-img" alt="">
+                    </div>
                     <p>Unisex</p>
                     <p><b>$94.99 - $109.99</b></p>
                 </div>
-                <div style="flex: 2 2 20%;">
-                    <img src="https://nb.scene7.com/is/image/NB/w680cb8_nb_02_i?$pdpflexf2$&wid=464&hei=464"
-                        class="img-fluid w-100 rounded" alt="">
+
+                <div class="rec-box" style="flex: 2 2 20%;">
+                    <div class="img-wrapper">
+                        <img src="https://nb.scene7.com/is/image/NB/w680cb8_nb_02_i?$pdpflexf2$&wid=464&hei=464"
+                            class="img-fluid w-100 rounded product-img" alt="">
+                    </div>
                     <p>Women's</p>
                     <p><b>$79.99</b></p>
                 </div>
+
             </div>
         </div>
     </section>
+
 
     <!-- SECTION-7 -->
 

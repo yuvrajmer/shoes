@@ -14,6 +14,10 @@
 
 
     <style>
+        .nav-link:hover {
+            color: rgb(231, 46, 46);
+        }
+
         .s2-d1 {
             display: grid;
             grid-template-columns: auto auto auto;
@@ -31,6 +35,25 @@
             grid-template-columns: auto auto auto;
             gap: 25px;
         }
+
+
+        .img-container {
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease, filter 0.5s ease;
+            cursor: pointer;
+        }
+
+        .img-container img:hover {
+            transform: scale(1.1);
+            filter: brightness(1.1);
+        }
+
 
 
 
@@ -82,6 +105,8 @@
             justify-content: center;
             color: white;
         }
+
+        
     </style>
 
 
@@ -193,16 +218,20 @@
                     alt="" height="155%" width="100%" style="object-fit: cover;">
             </div>
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/m108014f_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <p><b>Fresh Foam X 1080v14</b> <br> Men's Running <br>$164.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
 
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/ml574evw_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>Best seller</b></h6>
                 <p><b>574 Core</b> <br>Men's Lifestyle <br>$99.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -215,16 +244,21 @@
 
     <section class="d-flex justify-content-center">
         <div class="s3-d1">
-            <div class="box"><img
+            <div class="box">
+                <div class="img-container">
+                <img
                     src="https://nb.scene7.com/is/image/NB/m880g15_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <p><b>Fresh Foam X 880v15</b> <br>Men's Running<br>$139.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/m990gl6_nb_05_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>Best seller</b></h6>
                 <p><b>Made in USA 990v6</b> <br> Men's Lifestyle <br>$199.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -232,8 +266,10 @@
             </div>
 
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/u9060bpm_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>Back in stock</b></h6>
                 <p><b>9060</b> <br> Unisex Lifestyle<br>$124.99 - $149.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -245,17 +281,22 @@
 
     <section class="d-flex justify-content-center">
         <div class="s3-d1" style="margin-top: 200px;">
-            <div class="box"><img
+            <div class="box">
+                <div class="img-container">
+                <img
                     src="https://nb.scene7.com/is/image/NB/mt53654ahh_nb_31_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>Boston Character T-Shirt </b> <br> Men's Shirts <br>$49.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/u991pr2_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>Made in UK 991v2 Grape Sorbet </b> <br> Unisex Lifestyle <br>$249.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -263,8 +304,10 @@
             </div>
 
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/mt53818wt_nb_50_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>Shohei Memories Graphic T-Shirt</b> <br>Men's Shirts <br>$39.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -276,17 +319,22 @@
 
     <section class="d-flex justify-content-center">
         <div class="s3-d1" style="margin-top: 200px;">
-            <div class="box"><img
+            <div class="box">
+                <div class="img-container">
+                <img
                     src="https://nb.scene7.com/is/image/NB/mch996s6_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>FuelCell 996v6</b> <br> Men's Tennis <br>$134.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/nm417lwg_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>NB Numeric Franky Villani 417 Low</b> <br> Unisex Skateboarding <br>$79.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -294,8 +342,10 @@
             </div>
 
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/tshoac1_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>FuelCell Ohtani 1 Trainer</b> <br>Men's Baseball <br>$119.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -306,17 +356,22 @@
 
     <section class="d-flex justify-content-center">
         <div class="s3-d1" style="margin-top: 200px;">
-            <div class="box"><img
+            <div class="box">
+                <div class="img-container">
+                <img
                     src="https://nb.scene7.com/is/image/NB/lah01453gas_nb_03_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                    </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>'47 Hitch with Rope Hat</b> <br>Unisex Hats<br>$37.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/ms53610mhb_nb_71_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>In Game Printed 7" Mesh Short</b> <br>Men's Shorts<br>$54.99 <br> <s>$29.99</s></p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -324,8 +379,10 @@
             </div>
 
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/bb550utw_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>Coming soon</b></h6>
                 <p><b>550</b> <br>Unisex Lifestyle <br>$109.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -337,25 +394,31 @@
 
     <section class="d-flex justify-content-center">
         <div class="s3-d1" style="margin-top: 210px;">
-            <div class="box"><img
-                    src="https://nb.scene7.com/is/image/NB/u574spr_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+            <div class="box">
+                <div class="img-container">
+                <img    src="https://nb.scene7.com/is/image/NB/u574spr_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>574</b> <br>Unisex Lifestyle<br>$77.99 - $99.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/mt53928bum_nb_72_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                    </div>
                 <p><b>Woven Label T-Shirt</b> <br>Men's Shirts<br>$24.99 <br> <s>$29.99</s></p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
 
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/u990mm6_nb_03_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880"
                     alt="" height="100%" width="100%">
+                </div>
                 <p><b>Made in USA 990v6</b> <br>Unisex Lifestyle<br>$199.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
@@ -365,22 +428,19 @@
 
     <section class="d-flex justify-content-center">
         <div class="s3-d1" style="margin-top: 210px;">
-            <div class="box"><img
-                    src="https://nb.scene7.com/is/image/NB/lab23199vti_nb_03_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
-                    alt="" height="100%" width="100%">
+            <div class="box">
+                <div class="img-container">
+                    <img src="https://nb.scene7.com/is/image/NB/lab23199vti_nb_03_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+                        alt="">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>Athletics Backpack</b> <br>Unisex Bags<br>$79.99</p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
-            <div class="box">
-            </div>
-
-            <div class="box">
-
-            </div>
         </div>
     </section>
+
 
     <nav class="navbar" style="background-color: #050505; color: white; margin-top: 220px;">
         <form class="container-fluid justify-content-center gap-3 mt-2">
