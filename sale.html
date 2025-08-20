@@ -35,6 +35,23 @@
             grid-template-columns: auto auto auto;
             gap: 25px;
         }
+
+        .img-container {
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease, filter 0.5s ease;
+            cursor: pointer;
+        }
+
+        .img-container img:hover {
+            transform: scale(1.1);
+            filter: brightness(1.1);
+        }
     
     </style>
 
@@ -86,13 +103,13 @@
         <ul class="nav nav-underline justify-content-center gap-5 fs-6"
             style="background-color: rgba(255, 255, 255, 0.85); backdrop-filter: blur(6px);">
             <li class="nav-item">
-                <a class="nav-link link-secondary" href="#">Shoes</a>
+                <a class="nav-link link-secondary" href="shoes.html">Shoes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link link-secondary" href="#">Clothing</a>
+                <a class="nav-link link-secondary" href="clothing.html">Clothing</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link link-secondary" href="#">Accessories</a>
+                <a class="nav-link link-secondary" href="accesories.html">Accessories</a>
             </li>
         </ul>
     </header>
@@ -133,8 +150,10 @@
     <section class="d-flex justify-content-center mt-5">
         <div class="s2-d1">
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/gc574evw_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>Best seller</b></h6>
                 <p><b>574 Core</b> <br> Kids' Big Kids (Size 3.5 - 7) <br> $59.99 <s>$79.99</s> <br> <font style="color: rgb(212, 34, 34);">25% off <br>Limited time offer</font> </p> 
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -142,8 +161,10 @@
             </div>
 
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/ic574evg_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>Best seller</b></h6>
                 <p><b>574 Lace</b> <br> Kids' Babies & Toddlers (Size 0 - 10) <br>$44.84 <s>$64.99</s> <br> <font style="color: rgb(212, 34, 34);">31% off <br>Limited time offer</font> </p> 
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -151,8 +172,10 @@
             </div>
 
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/m680cs8_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>Best seller</b></h6>
                 <p><b>Fresh Foam 680v8</b> <br> Men's Running<br>$55.19 <s>$79.99</s> <br> <font style="color: rgb(212, 34, 34);">31% off <br>Limited time offer</font> </p> 
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -166,24 +189,30 @@
     <section class="d-flex justify-content-center">
         <div class="s3-d1">
            <div class="box">
+            <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/mt41502pae_nb_70_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+            </div>
                 <p><b>Sport Essentials Logo T-Shirt</b> <br>Men's Shirts <br>$21.99 - $29.99 <br> <font style="color: rgb(212, 34, 34);">30% off <br>colors w/ NBLEARN</font> </p> 
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
             
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/mt41511dus_nb_70_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <p><b>Sport Essentials Fleece Hoodie</b> <br>Men's Hoodies & Sweatshirts<br>$51.99 - $69.99 <br> <font style="color: rgb(212, 34, 34);">30% off <br>colors w/ NBLEARN</font> </p> 
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
 
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/waristm4_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New colors</b></h6>
                 <p><b>Fresh Foam Arishi v4 Tiralux</b> <br> Women's Running <br>$74.99 <br> <font style="color: rgb(212, 34, 34);">25% off <br>colors w/ NBLEARN</font> </p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -195,17 +224,22 @@
 
     <section class="d-flex justify-content-center">
         <div class="s3-d1" style="margin-top: 240px;">
-            <div class="box"><img
+            <div class="box">
+                <div class="img-container">
+                <img
                     src="https://nb.scene7.com/is/image/NB/wthierv9_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>Fresh Foam X Hierro v9</b> <br>Women's Hiking & Trail<br>$119.34 <s>$154.99</s> <br> <font style="color: rgb(212, 34, 34);">23% off <br>Limited time offer</font> </p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/ws41286gab_nb_70_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>RC Short 3"</b> <br> Women's Shorts <br>$47.99 - $64.99 <br> <font style="color: rgb(212, 34, 34);">30% off</font> </p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -213,8 +247,10 @@
             </div>
 
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/mariseg4_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>Fresh Foam Arishi v4</b> <br>Men's Running<br>$69.99  <br> <font style="color: rgb(212, 34, 34);">25% off <br>Limited time offer</font> </p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -226,25 +262,32 @@
 
     <section class="d-flex justify-content-center">
         <div class="s3-d1" style="margin-top: 240px;">
-            <div class="box"><img
+            <div class="box">
+                <div class="img-container">
+                <img
                     src="https://nb.scene7.com/is/image/NB/wfcprcs5_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>Made in USA 990v6</b> <br> Men's Lifestyle <br>$199.99  <br> <font style="color: rgb(212, 34, 34);">25% off </font> </p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/mch696a6_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <p><b>Made in USA 990v6</b> <br> Men's Lifestyle <br>$199.99  <br> <font style="color: rgb(212, 34, 34);">Limited time offer</font> </p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
 
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/ms41283set_nb_70_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>Best seller</b></h6>
                 <p><b>Made in USA 990v6</b> <br> Men's Lifestyle <br>$199.99  <br> <font style="color: rgb(212, 34, 34);">30% off <br>select color w/ NBLEARN</font> </p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -255,24 +298,31 @@
 
     <section class="d-flex justify-content-center">
         <div class="s3-d1" style="margin-top: 250px;">
-            <div class="box"><img
+            <div class="box">
+                <div class="img-container">
+                <img
                     src="https://nb.scene7.com/is/image/NB/wchcodg2_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <p><b>Coco Delray</b> <br>Women's Tennis <br>$84.69 <s>$109.99</s> <br> <font style="color: rgb(212, 34, 34);">23% off <br>Limited time offer</font> </p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/mrcelcw4_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <p><b>FuelCell SuperComp Elite v4</b> <br>Men's Running <br>$199.99 <s>$249.99</s> <br> <font style="color: rgb(212, 34, 34);">20% off </font> </p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
 
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/t3000sk7_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>Coming soon</b></h6>
                 <p><b>Fresh Foam 3000v7 Turf-Trainer</b> <br>Men's Baseball<br>$75.04 <s>$94.99</s> <br> <font style="color: rgb(212, 34, 34);">21% off <br>Limited time offer</font> </p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -284,25 +334,32 @@
 
     <section class="d-flex justify-content-center">
         <div class="s3-d1" style="margin-top: 250px;">
-            <div class="box"><img
+            <div class="box">
+                <div class="img-container">
+                <img
                     src="https://nb.scene7.com/is/image/NB/wthigb8_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>Fresh Foam X Hierro v8 Gore-Tex®</b> <br>Women's Hiking & Trail<br>$103.35 <s>$169.99</s><br> <font style="color: rgb(212, 34, 34);">39% off <br>Limited time offer</font> </p>
             <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/bb550jp1_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <p><b>550</b> <br>Unisex Lifestyle<br>$84.99 <s>$109.99</s><br> <font style="color: rgb(212, 34, 34);">23% off</font> </p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
 
             <div class="box">
+                <div class="img-container">
                 <img src="https://nb.scene7.com/is/image/NB/mchcodw2_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                     <h6 style="color: rgb(164, 105, 27);"><b>Best seller</b></h6>
                     <p><b>Coco Delray</b> <br>Men's Tennis<br>$84.69 <s>$109.99</s> <br> <font style="color: rgb(212, 34, 34);">23% off <br>Limited time offer</font> </p>
                     <button type="button" class="btn btn-danger">Add to Cart</button>
@@ -313,16 +370,22 @@
 
     <section class="d-flex justify-content-center">
         <div class="s3-d1" style="margin-top: 250px;">
-            <div class="box"><img
+            <div class="box">
+                <div class="img-container">
+                <img
                     src="https://nb.scene7.com/is/image/NB/wt51917lin_nb_72_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <p><b>Multi Color Logo Hoodie</b> <br>Women's Hoodies & Sweatshirts <br>$51.99 - $69.99 <br> <font style="color: rgb(212, 34, 34);">30% off <br>select colors w/ NBLEARN</font> </p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
                 <button type="button" class="btn btn-danger ms-2">Buy Now</button>
             </div>
-            <div class="box"><img
+            <div class="box">
+                <div class="img-container">
+                <img
                     src="https://nb.scene7.com/is/image/NB/wj51501sst_nb_70_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
                     alt="" height="100%" width="100%">
+                </div>
                 <h6 style="color: rgb(164, 105, 27);"><b>New</b></h6>
                 <p><b>Color Blocked Woven Jacket</b> <br>Women's Jackets & Vests<br>$92.99 - $124.99<br> <font style="color: rgb(212, 34, 34);">30% off</font> </p>
                 <button type="button" class="btn btn-danger">Add to Cart</button>
