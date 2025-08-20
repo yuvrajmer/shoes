@@ -62,7 +62,73 @@
             display: block;
         }
 
+        .img-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
 
+        .category-img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.4s ease;
+        }
+
+        .s2-box:hover .category-img {
+            transform: scale(1.1);
+        }
+
+
+        
+        /* section-5 css */
+
+        .s5-img {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .s5-img img {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: 0.3s ease;
+        }
+
+        .s5-img:hover img {
+            filter: blur(1px);
+            border-radius: 2px;
+            background: #e0e0e0;
+            box-shadow: 7px 7px 5px #cecece,
+                -7px -7px 2px #f2f2f2;
+        }
+
+        .btn-overlay {
+            position: absolute;
+            top: 34%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(206, 38, 38, 0.8);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+
+        .s5-img:hover .btn-overlay {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+
+        
         .toggle-group {
             margin-left: 26vw;
             background-color: #f1f1f1;
@@ -91,6 +157,18 @@
             font-weight: bold;
             outline: none;
             box-shadow: 0 0 0 1px #ccc;
+        }
+
+
+        .s6-box{
+            margin-top: 2vh;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            display: block;
+        }
+
+        .s6-box:hover .category-img {
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -168,175 +246,213 @@
 
     <section>
         <div class="s2-div1">
-            <h3>Shop by Size</h3>
+            <h3>Shop by Category</h3>
         </div>
-        <div class=" d-flex justify-content-center gap-4">
-            <div class="s2-box"><img
-                    src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwb0941231/images/page-designer/2025/BTS/Comp_I/NB-3811_Comp_I1_Image_BigKid.jpg?sw=538&sfrm=jpg"
-                    alt="" height="96%" width="100%">
-                <a class="d-flex justify-content-center mt-3" href="" style="color: #000000;"><b>Big kids (Size
-                        3.5-7)</b></a>
+
+        <div class="d-flex justify-content-center gap-4">
+
+            <div class="s2-box">
+                <div class="img-wrapper">
+                    <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwb0941231/images/page-designer/2025/BTS/Comp_I/NB-3811_Comp_I1_Image_BigKid.jpg?sw=538&sfrm=jpg"
+                        alt="" height="96%" width="100%" class="category-img">
+                </div>
+                <a class="d-flex justify-content-center mt-3" href="#" style="color: #000000;"><b>Graphic shop</b></a>
             </div>
-            <div class="s2-box"><img
-                    src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw950ceaef/images/page-designer/2025/BTS/Comp_I/NB-3811_Comp_I1_Image_LittleKid.jpg?sw=538&sfrm=jpg"
-                    alt="" height="96%" width="100%">
-                <a class="d-flex justify-content-center mt-3" href="" style="color: #000000;"><b>Little kids (Size
-                        10.5-3)</b></a>
+
+            <div class="s2-box">
+                <div class="img-wrapper">
+                    <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw950ceaef/images/page-designer/2025/BTS/Comp_I/NB-3811_Comp_I1_Image_LittleKid.jpg?sw=538&sfrm=jpg"
+                        alt="" height="96%" width="100%" class="category-img">
+                </div>
+                <a class="d-flex justify-content-center mt-3" href="#" style="color: #000000;"><b>Matching sets</b></a>
             </div>
-            <div class="s2-box"><img
-                    src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwa15303b5/images/page-designer/2025/BTS/Comp_I/NB-3811_Comp_I1_Image_Crib.jpg?sw=538&sfrm=jpg"
-                    alt="" height="96%" width="100%">
-                <a class="d-flex justify-content-center mt-3" href="" style="color: #000000;"><b>Babies & toddlers (Size
-                        0-10)</b></a>
+
+            <div class="s2-box">
+                <div class="img-wrapper">
+                    <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwa15303b5/images/page-designer/2025/BTS/Comp_I/NB-3811_Comp_I1_Image_Crib.jpg?sw=538&sfrm=jpg"
+                        alt="" height="96%" width="100%" class="category-img">
+                </div>
+                <a class="d-flex justify-content-center mt-3" href="#" style="color: #000000;"><b>Kids</b></a>
             </div>
+
         </div>
     </section>
+
 
     <!-- SECTION-3 -->
 
 
-<section class="mt-5">
-    <div class="container">
-        <div class="text-start mt-5">
-            <h4>Shop by sport</h4>
-        </div>
-
-        <div id="multiItemCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <div class="row g-3">
-                        <div class="col-6 col-md-3 text-center">
-                            <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw5630b715/images/page-designer/2025/February/NB-2896_Comp_X2_Image1.jpg" class="img-fluid rounded" alt="Soccer">
-                            <p class="mt-2"><b>Soccer</b></p>
-                        </div>
-                        <div class="col-6 col-md-3 text-center">
-                            <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw32f3f802/images/page-designer/2025/February/NB-2896_Comp_X2_Image3.jpg" class="img-fluid rounded" alt="Baseball">
-                            <p class="mt-2"><b>Baseball</b></p>
-                        </div>
-                        <div class="col-6 col-md-3 text-center">
-                            <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw8ad7f8be/images/page-designer/2025/February/NB-2896_Comp_X2_Image5.jpg" class="img-fluid rounded" alt="Lacrosse">
-                            <p class="mt-2"><b>Lacrosse</b></p>
-                        </div>
-                        <div class="col-6 col-md-3 text-center">
-                            <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw55614e13/images/page-designer/2025/February/NB-2896_Comp_X2_Image6.jpg" class="img-fluid rounded" alt="Softball">
-                            <p class="mt-2"><b>Softball</b></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="row g-3">
-                        <div class="col-6 col-md-3 text-center">
-                            <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwe473c70b/images/page-designer/2025/February/NB-2896_Comp_X2_Image4.jpg" class="img-fluid rounded" alt="Basketball">
-                            <p class="mt-2"><b>Basketball</b></p>
-                        </div>
-                        <div class="col-6 col-md-3 text-center">
-                            <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw32f3f802/images/page-designer/2025/February/NB-2896_Comp_X2_Image3.jpg" class="img-fluid rounded" alt="Baseball">
-                            <p class="mt-2"><b>Baseball</b></p>
-                        </div>
-                        <div class="col-6 col-md-3 text-center">
-                            <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw8ad7f8be/images/page-designer/2025/February/NB-2896_Comp_X2_Image5.jpg" class="img-fluid rounded" alt="Lacrosse">
-                            <p class="mt-2"><b>Lacrosse</b></p>
-                        </div>
-                        <div class="col-6 col-md-3 text-center">
-                            <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw55614e13/images/page-designer/2025/February/NB-2896_Comp_X2_Image6.jpg" class="img-fluid rounded" alt="Softball">
-                            <p class="mt-2"><b>Softball</b></p>
-                        </div>
-                    </div>
-                </div>
-
+    <section class="mt-5">
+        <div class="container">
+            <div class="text-start mt-5">
+                <h4>Shop by sport</h4>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon bg-dark rounded-circle p-3 mb-5 me-5"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon bg-dark rounded-circle p-3 mb-5 ms-5"></span>
-            </button>
+            <div id="multiItemCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row g-3">
+                            <div class="col-6 col-md-3 text-center">
+                                <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw5630b715/images/page-designer/2025/February/NB-2896_Comp_X2_Image1.jpg"
+                                    class="img-fluid rounded" alt="Soccer">
+                                <p class="mt-2"><b>Soccer</b></p>
+                            </div>
+                            <div class="col-6 col-md-3 text-center">
+                                <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw32f3f802/images/page-designer/2025/February/NB-2896_Comp_X2_Image3.jpg"
+                                    class="img-fluid rounded" alt="Baseball">
+                                <p class="mt-2"><b>Baseball</b></p>
+                            </div>
+                            <div class="col-6 col-md-3 text-center">
+                                <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw8ad7f8be/images/page-designer/2025/February/NB-2896_Comp_X2_Image5.jpg"
+                                    class="img-fluid rounded" alt="Lacrosse">
+                                <p class="mt-2"><b>Lacrosse</b></p>
+                            </div>
+                            <div class="col-6 col-md-3 text-center">
+                                <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw55614e13/images/page-designer/2025/February/NB-2896_Comp_X2_Image6.jpg"
+                                    class="img-fluid rounded" alt="Softball">
+                                <p class="mt-2"><b>Softball</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-3">
+                            <div class="col-6 col-md-3 text-center">
+                                <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwe473c70b/images/page-designer/2025/February/NB-2896_Comp_X2_Image4.jpg"
+                                    class="img-fluid rounded" alt="Basketball">
+                                <p class="mt-2"><b>Basketball</b></p>
+                            </div>
+                            <div class="col-6 col-md-3 text-center">
+                                <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw32f3f802/images/page-designer/2025/February/NB-2896_Comp_X2_Image3.jpg"
+                                    class="img-fluid rounded" alt="Baseball">
+                                <p class="mt-2"><b>Baseball</b></p>
+                            </div>
+                            <div class="col-6 col-md-3 text-center">
+                                <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw8ad7f8be/images/page-designer/2025/February/NB-2896_Comp_X2_Image5.jpg"
+                                    class="img-fluid rounded" alt="Lacrosse">
+                                <p class="mt-2"><b>Lacrosse</b></p>
+                            </div>
+                            <div class="col-6 col-md-3 text-center">
+                                <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw55614e13/images/page-designer/2025/February/NB-2896_Comp_X2_Image6.jpg"
+                                    class="img-fluid rounded" alt="Softball">
+                                <p class="mt-2"><b>Softball</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3 mb-5 me-5"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle p-3 mb-5 ms-5"></span>
+                </button>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
     <!-- SECTION-4 -->
 
     <section class="container mt-5">
-    <div class="row align-items-center justify-content-center">
+        <div class="row align-items-center justify-content-center">
 
-        <div class="col-12 col-md-6 text-start mt-4">
-            <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw038e0135/images/page-designer/2025/BTS/Comp_E/NB-3811_Comp_E_Image_574Kids.jpg?sw=808&sfrm=jpg"
-                class="img-fluid" alt="The 574" style="max-height: 80vh;">
-            <h5 class="mt-3">The 574</h5>
-            <p>Worn by anyone</p>
-            <button type="button" class="btn btn-danger" style="width: 140px;">Shop now</button>
+            <div class="col-12 col-md-6 text-start mt-4">
+                <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw038e0135/images/page-designer/2025/BTS/Comp_E/NB-3811_Comp_E_Image_574Kids.jpg?sw=808&sfrm=jpg"
+                    class="img-fluid" alt="The 574" style="max-height: 80vh;">
+                <h5 class="mt-3">The 574</h5>
+                <p>Worn by anyone</p>
+                <button type="button" class="btn btn-danger" style="width: 140px;">Shop now</button>
+            </div>
+
+            <div class="col-12 col-md-6 text-start mt-4">
+                <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwe8aac070/images/page-designer/2025/BTS/Comp_E/NB-3811_Comp_E_Image_PerformanceKids.jpg?sw=808&sfrm=jpg"
+                    class="img-fluid" alt="FuelCell Play" style="max-height: 80vh;">
+                <h5 class="mt-3">The FuelCell Play</h5>
+                <p>The ultimate playground shoes</p>
+                <button type="button" class="btn btn-danger" style="width: 140px;">Shop now</button>
+            </div>
+
         </div>
-
-        <div class="col-12 col-md-6 text-start mt-4">
-            <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwe8aac070/images/page-designer/2025/BTS/Comp_E/NB-3811_Comp_E_Image_PerformanceKids.jpg?sw=808&sfrm=jpg"
-                class="img-fluid" alt="FuelCell Play" style="max-height: 80vh;">
-            <h5 class="mt-3">The FuelCell Play</h5>
-            <p>The ultimate playground shoes</p>
-            <button type="button" class="btn btn-danger" style="width: 140px;">Shop now</button>
-        </div>
-
-    </div>
-</section>
+    </section>
 
 
     <!-- SECTION-5 -->
 
     <section class="mt-5">
-        <div class="d-flex justify-content-center ms-3" style="margin-top: 15vh;">
-            <h4>What's Trending</h4>
+        <div class="d-flex justify-content-center ms-4" style="margin-top: 15vh;">
+            <h4 class="">What's Trending</h4>
         </div>
         <div class="container mt-4">
             <div class="toggle-group">
-                <button class="toggle-button">Women</button>
+                <button class="toggle-button"><a href="women.html">Women</a></button>
                 <button class="toggle-button">Men</button>
                 <button class="toggle-button">Kids</button>
             </div>
             <div class="d-flex justify-content-center gap-3">
-                <div class="mt-5"><img src="./gallery/img2 (3).png" alt="" class="img-fluid">
+
+                <div class="mt-5 s5-img">
+                    <img src="./gallery/img2 (3).png" alt="" class="img-fluid">
+                    <a href=".html" class="btn-overlay">Shop Now</a>
                     <p style="color: brown;"><b>New</b></p>
                     <p><b>FuelCell Rebel v5</b></p>
                     <p>Women's</p>
                     <p><b>$139.99</b></p>
                 </div>
-                <div class="mt-5"><img src="./gallery/img2 (5).png" alt="" class="img-fluid">
+
+                <div class="mt-5 s5-img">
+                    <img src="./gallery/img2 (5).png" alt="" class="img-fluid">
+                    <a href="product1.html" class="btn-overlay">Shop Now</a>
                     <p><b>Coastal Fleece Crew</b></p>
                     <p>Women's</p>
                     <p><b>$59.99 - $79.99</b></p>
                 </div>
-                <div class="mt-5"><img src="./gallery/img2 (4).png" alt="" class="img-fluid">
+
+                <div class="mt-5 s5-img">
+                    <img src="./gallery/img2 (4).png" alt="" class="img-fluid">
+                    <a href="product1.html" class="btn-overlay">Shop Now</a>
                     <p><b>471</b></p>
                     <p>Unisex</p>
                     <p><b>$74.99 - $109.99</b></p>
                 </div>
-                <div class="mt-5"><img src="./gallery/img2 (1).png" alt="" class="img-fluid">
+
+                <div class="mt-5 s5-img">
+                    <img src="./gallery/img2 (1).png" alt="" class="img-fluid">
+                    <a href="product1.html" class="btn-overlay">Shop Now</a>
                     <p style="color: brown;"><b>Best Seller</b></p>
                     <p><b>Coastal Fleece Pant</b></p>
                     <p>Women's</p>
                     <p><b>$79.99</b></p>
                 </div>
+
             </div>
+
         </div>
     </section>
+
 
     <!-- SECTION-6 -->
 
     <section class="d-flex justify-content-center  gap-2" style="margin: 0 11vw; margin-top: 8vh;">
-        <div>
+        <div class="s6-box">
+            <div class="img-wrapper">
             <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw10739067/images/page-designer/2025/February/NB-2896_Comp_X3_Desktop_Image1.jpg"
-                class="img-fluid rounded-3" alt="...">
+                class="img-fluid rounded-3 category-img" alt="..." >
+            </div>
             <a href="" style="text-decoration: none; color: #000000; ">
                 <h6 class="mt-2 ms-1">Laced</h6>
             </a>
         </div>
-        <div>
+        <div class="s6-box">
+            <div class="img-wrapper">
             <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwcd74a55b/images/page-designer/2025/February/NB-2896_Comp_X3_Desktop_Image2.jpg"
-                class="img-fluid rounded-3" alt="...">
+                class="img-fluid rounded-3 category-img" alt="...">
+            </div>
             <a href="" style="text-decoration: none; color: #000000; ">
                 <h6 class="mt-2 ms-1">Non-laced</h6>
             </a>
@@ -346,38 +462,51 @@
     <!-- SECTION-7 -->
 
     <section class="container mt-5">
-    <div class="row align-items-center">
+        <div class="row align-items-center">
 
-        <div class="col-12 col-md-6 text-center text-md-start mb-5 mb-md-0 mt-5">
-            <h1 class="px-3" style="margin-top: 5vh; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-                Find Your Size
-            </h1>
-            <h6 class="px-3 mt-4">
-                Print out New Balance Kids' Footwear Sizing Tool to find the <br class="d-none d-md-block">
-                perfect fit without leaving home.
-            </h6>
-            <div class="px-3 mt-3">
-                <button type="button" class="btn btn-outline-danger" style="border: 3px solid rgb(211, 33, 33); width: 160px; height: 45px;">
-                    <b>Danger</b>
-                </button>
+            <div class="col-12 col-md-6 text-center text-md-start mb-5 mb-md-0 mt-5">
+                <h1 class="px-3"
+                    style="margin-top: 5vh; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    Find Your Size
+                </h1>
+                <h6 class="px-3 mt-4">
+                    Print out New Balance Kids' Footwear Sizing Tool to find the <br class="d-none d-md-block">
+                    perfect fit without leaving home.
+                </h6>
+                <div class="px-3 mt-3">
+                    <button type="button" class="btn btn-outline-danger"
+                        style="border: 3px solid rgb(211, 33, 33); width: 160px; height: 45px;">
+                        <b>Shop Now</b>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 text-center mt-5">
+                <img src="http://newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwc0ef8900/images/page-designer/2025/February/NB-2896_Comp_J_Desktop.jpg"
+                    class="img-fluid" alt="Find Your Size Image">
             </div>
         </div>
-
-        <div class="col-12 col-md-6 text-center mt-5">
-            <img src="http://newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwc0ef8900/images/page-designer/2025/February/NB-2896_Comp_J_Desktop.jpg"
-                class="img-fluid" alt="Find Your Size Image">
-        </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- SECTION-8 -->
 
     <section style="margin: 8vh 15vw;">
-        <h3 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;"><b>The New Balance Kids' Collection</b></h3>
-        <p class="mt-4" style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Fun, fresh and functional—New Balance is proud to offer top-notch kids’ shoes, apparel and more that offer the resiliency parents love with the look and feel your kids seek. Our kids’ collection of clothes and shoes focuses on durability and ease of use to provide the quality you seek for your children’s longest days on the playground.</p>
-        <p style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Our kids' sneaker collection includes first walkers, little kid and big kid sizes. From laced designs to hook and loop closures and slip-on fits, our technology-backed kids’ shoes offer a little something for every age, preference and play style.</p>
-        <p style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Your child’s apparel needs are covered with performance gear that wicks sweat, keeps them warm, and outlasts even the longest days of play and, of course. The New Balance’s kids’ collection is all about your kids’ comfort, offering functional, fashionable clothing that looks as amazing as it feels—and lasts even longer.</p>
+        <h3 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;"><b>The New Balance Kids'
+                Collection</b></h3>
+        <p class="mt-4" style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Fun, fresh
+            and functional—New Balance is proud to offer top-notch kids’ shoes, apparel and more that offer the
+            resiliency parents love with the look and feel your kids seek. Our kids’ collection of clothes and shoes
+            focuses on durability and ease of use to provide the quality you seek for your children’s longest days on
+            the playground.</p>
+        <p style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Our kids' sneaker
+            collection includes first walkers, little kid and big kid sizes. From laced designs to hook and loop
+            closures and slip-on fits, our technology-backed kids’ shoes offer a little something for every age,
+            preference and play style.</p>
+        <p style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Your child’s apparel needs
+            are covered with performance gear that wicks sweat, keeps them warm, and outlasts even the longest days of
+            play and, of course. The New Balance’s kids’ collection is all about your kids’ comfort, offering
+            functional, fashionable clothing that looks as amazing as it feels—and lasts even longer.</p>
     </section>
 
     <!-- SECTION-9 -->
@@ -392,42 +521,44 @@
     </nav>
 
     <footer class="container-fluid py-5 px-4 px-md-5 bg-light">
-    <div class="row">
-        <div class="col-12 col-md-8 d-flex flex-column flex-md-row ">
-            <ul class="list-unstyled me-md-5 mb-4 mb-md-0">
-                <li><strong>Help</strong></li>
-                <li class="mt-3"><a href="#" class="text-decoration-none text-dark">Contact us</a></li>
-                <li><a href="#" class="text-decoration-none text-dark">Start a return</a></li>
-                <li><a href="#" class="text-decoration-none text-dark">Track your order</a></li>
-                <li><a href="#" class="text-decoration-none text-dark">Become a member</a></li>
-                <li><a href="#" class="text-decoration-none text-dark">Size guide</a></li>
-                <li><a href="#" class="text-decoration-none text-dark">FAQ</a></li>
-            </ul>
-            <ul class="list-unstyled">
-                <li><strong>About Us</strong></li>
-                <li class="mt-3"><a href="#" class="text-decoration-none text-dark">Our purpose</a></li>
-                <li><a href="#" class="text-decoration-none text-dark">Responsible leadership</a></li>
-                <li><a href="#" class="text-decoration-none text-dark">New Balance Foundation</a></li>
-                <li><a href="#" class="text-decoration-none text-dark">Careers</a></li>
-                <li><a href="#" class="text-decoration-none text-dark">The TRACK at New Balance</a></li>
-                <li><a href="#" class="text-decoration-none text-dark">Press box</a></li>
-                <li><a href="#" class="text-decoration-none text-dark">Medical Plan information</a></li>
-            </ul>
-        </div>
+        <div class="row">
+            <div class="col-12 col-md-8 d-flex flex-column flex-md-row ">
+                <ul class="list-unstyled me-md-5 mb-4 mb-md-0">
+                    <li><strong>Help</strong></li>
+                    <li class="mt-3"><a href="#" class="text-decoration-none text-dark">Contact us</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Start a return</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Track your order</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Become a member</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Size guide</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">FAQ</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li><strong>About Us</strong></li>
+                    <li class="mt-3"><a href="#" class="text-decoration-none text-dark">Our purpose</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Responsible leadership</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">New Balance Foundation</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Careers</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">The TRACK at New Balance</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Press box</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Medical Plan information</a></li>
+                </ul>
+            </div>
 
-        <div class="col-12 col-md-4 mt-4 mt-md-0">
-            <h4>Fearlessly Independent</h4>
-            <img src="https://logoeps.com/wp-content/uploads/2012/05/new-balance-logo-vector-01.png" alt="New Balance Logo" class="img-fluid my-2" style="max-width: 60px;">
-            <p class="small">Independent since 1906, we empower people <br> through sport and craftsmanship to create <br> positive change in communities around the <br> world.</p>
-            <div class="fs-5 mt-2">
-                <a href="#" class="text-dark me-2"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="text-dark me-2"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="text-dark me-2"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" class="text-dark"><i class="fa-brands fa-tiktok"></i></a>
+            <div class="col-12 col-md-4 mt-4 mt-md-0">
+                <h4>Fearlessly Independent</h4>
+                <img src="https://logoeps.com/wp-content/uploads/2012/05/new-balance-logo-vector-01.png"
+                    alt="New Balance Logo" class="img-fluid my-2" style="max-width: 60px;">
+                <p class="small">Independent since 1906, we empower people <br> through sport and craftsmanship to
+                    create <br> positive change in communities around the <br> world.</p>
+                <div class="fs-5 mt-2">
+                    <a href="#" class="text-dark me-2"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-dark me-2"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-dark me-2"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="text-dark"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
 
